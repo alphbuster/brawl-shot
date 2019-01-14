@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Arena_01</layout>
+        <layout order="7">Menu</layout>
+        <event-sheet order="1">Arena_Event</event-sheet>
+        <event-sheet order="2">Player_Behavior</event-sheet>
+        <event-sheet order="3">Controller_Map</event-sheet>
+        <event-sheet order="4">Etc_Behavior</event-sheet>
+        <event-sheet order="5">GLOBAL_VAR</event-sheet>
+        <event-sheet active="1" order="6">Menu_Event</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="Players" />
+        <family expanded="0" name="Solids" />
+        <family expanded="0" name="Bullets" />
+        <family expanded="0" name="JumpTrough" />
+        <family expanded="0" name="VFXs" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="sound-folder/BGM/" />
+        <folder expanded="1" path="sound-folder/SFX/" />
+        <folder expanded="1" path="animation-folder/Spr_PlatformCollider/" />
+        <folder expanded="1" path="animation-folder/Hlp_PointCenterarena/" />
+        <folder expanded="1" path="animation-folder/Player_One/" />
+        <folder expanded="1" path="animation-folder/Player_Two/" />
+        <folder expanded="1" path="animation-folder/Spr_Bullet/" />
+        <folder expanded="1" path="animation-folder/Spr_JumpTrough/" />
+        <folder expanded="1" path="animation-folder/Spr_WpBow/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Spr_Heart/" />
+        <folder expanded="1" path="animation-folder/Spr_VFXDust/" />
+        <folder expanded="1" path="animation-folder/Spr_VFXShoot/" />
+        <folder expanded="1" path="animation-folder/Spr_VFXHit/" />
+        <folder expanded="1" path="animation-folder/Spr_MenuBrawl/" />
+        <folder expanded="1" path="animation-folder/Spr_MenuShooter/" />
+        <folder expanded="1" path="animation-folder/Spr_Overlay/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu_Event</name>
+    <events>
+        <event-block sid="246933615709947">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="524550964580373" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="270813092891101" type="sf_AnyKey">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>Title Animation</comment>
+                <event-block sid="417960813874961">
+                    <conditions />
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="968261428196729" type="Spr_MenuBrawl">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="410744047746814" type="Spr_MenuShooter">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="190398935915450" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="651982044363156" type="Spr_Overlay">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="684575452987614">
+            <conditions>
+                <condition behavior="LiteTween" id="4" name="On tween end" sid="471365580677372" type="Spr_Overlay" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="602963059801137" type="Audio">
+                    <param id="0" name="Audio file">Rizal_Menu</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;MenuBGM&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="811906517370264" type="sf_AnyKey">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="205711967622611" type="sf_AnyKey">
+                    <param id="0" name="&apos;On&apos; time">0.5</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">5</param>
+                </action>
+                <action behavior="LiteTween" id="11" name="Reverse" sid="808846316213495" type="Spr_Overlay">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="126648109728000" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="409524817707753">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="196153048837666" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="386768184844059" type="Audio">
+                    <param id="0" name="Tag">&quot;MenuBGM&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="257885108004848" type="System">
+                    <param id="0" name="Layout">Arena_01</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="781034161445424">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="346489181543872" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="628657472285512" type="sf_AnyKey">
+                    <param id="0" name="&apos;On&apos; time">0.5</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

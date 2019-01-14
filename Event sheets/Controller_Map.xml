@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controller_Map</name>
+    <events>
+        <event-group description="" sid="398389635789542" title="Player One">
+            <sub-events>
+                <event-block sid="380932312617253">
+                    <conditions>
+                        <condition id="-17" name="Pick top/bottom" sid="897688158816891" type="Players">
+                            <param id="0" name="Which">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="847610083878067">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="487097193496441" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="770863366259180" type="Function">
+                                    <param id="0" name="Name">&quot;MoveRight&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="512275018136526">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="498876428392867" type="Keyboard">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="277706443624170" type="Function">
+                                    <param id="0" name="Name">&quot;MoveLeft&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="565429251572882">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="602331176350290" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="875986135273247" type="Function">
+                                    <param id="0" name="Name">&quot;Jump&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="104789722278581">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="445186427198091" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="915570409854902" type="Function">
+                                    <param id="0" name="Name">&quot;Duck&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID{###}1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="908363692569060">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="472995184662551" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="556789789181274" type="Function">
+                                    <param id="0" name="Name">&quot;Duck&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID{###}0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="659145847558501">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="236550653720929" type="Keyboard">
+                                    <param id="0" name="Key">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="315711626665740" type="Function">
+                                    <param id="0" name="Name">&quot;Fire&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="370812305405299">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="591807451495537" type="Keyboard">
+                                    <param id="0" name="Key">82</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="674246997347038" type="Function">
+                                    <param id="0" name="Name">&quot;Dodge&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="969784772605659" title="Player Two">
+            <sub-events>
+                <event-block sid="535808566621999">
+                    <conditions>
+                        <condition id="-17" name="Pick top/bottom" sid="783337028454672" type="Players">
+                            <param id="0" name="Which">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="129025973290724">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="573735375956020" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="809541575801019" type="Function">
+                                    <param id="0" name="Name">&quot;MoveRight&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="674383487562093">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="237108509936424" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="897397804215619" type="Function">
+                                    <param id="0" name="Name">&quot;MoveLeft&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="395115191402063">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="420479496980430" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="500234614364068" type="Function">
+                                    <param id="0" name="Name">&quot;Jump&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="757565415078060">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="891275653208526" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="539671262684150" type="Function">
+                                    <param id="0" name="Name">&quot;Duck&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID{###}1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="472080483612582">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="365723760873204" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="894634833951475" type="Function">
+                                    <param id="0" name="Name">&quot;Duck&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID{###}0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="593332431294092">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="439017268742058" type="Keyboard">
+                                    <param id="0" name="Key">222</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="774272420020130" type="Function">
+                                    <param id="0" name="Name">&quot;Fire&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="287165777239195">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="295433289657168" type="Keyboard">
+                                    <param id="0" name="Key">186</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="702155626398263" type="Function">
+                                    <param id="0" name="Name">&quot;Dodge&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Arena_Event</name>
+    <events>
+        <include>GLOBAL_VAR</include>
+        <include>Player_Behavior</include>
+        <include>Etc_Behavior</include>
+        <event-group description="" sid="621546590510912" title="Setup Arena">
+            <sub-events>
+                <event-block sid="482182725723070">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="107132045093975" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="372676619677153" type="System">
+                            <param id="0" name="Layer">&quot;Helpers&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="179936806238899" type="System">
+                            <param id="0" name="Layer">&quot;ArenaColider&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="979948140910854">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Play" sid="944149891777961" type="Audio">
+                                    <param id="0" name="Audio file">game start</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>BGM</comment>
+                        <event-block sid="613811741840466">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="439747043275061" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="0" name="Play" sid="524778754602852" type="Audio">
+                                    <param id="0" name="Audio file">Rizal_Stage</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MainBGM&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="980348175866933" title="Environment">
+            <sub-events>
+                <event-block sid="450203751006971">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="854101282074786" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Dynamic Camera</comment>
+                        <event-block sid="413924072145673">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Set position" sid="993562918990100" type="Hlp_PointCenterarena">
+                                    <param id="0" name="X">(Player_One.X + Player_Two.X) / 2</param>
+                                    <param id="1" name="Y">(Player_One.Y + Player_Two.Y) / 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="209843657067885" title="UI">
+            <sub-events>
+                <event-block sid="716671928503959">
+                    <conditions>
+                        <condition id="0" name="On function" sid="366402375324913" type="Function">
+                            <param id="0" name="Name">&quot;ChangeUIPercent&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="639443324085200">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="283961050831532" type="Players">
+                                    <param id="0" name="Unique ID">Function.Param(0)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="391604017562764">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="122017167077151" type="Players">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="889915793228350">
+                                            <conditions>
+                                                <condition id="-20" name="Pick highest/lowest" sid="310885470749003" type="sf_HPercent">
+                                                    <param id="0" name="Which">0</param>
+                                                    <param id="1" name="Instance variable">owner</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="852592631984135" type="sf_HPercent">
+                                                    <param id="0" name="Text">Players.Percent&amp;&quot;%&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="453206363124150">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="890065721228417" type="Players">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="521928188133508">
+                                            <conditions>
+                                                <condition id="-20" name="Pick highest/lowest" sid="589652366992323" type="sf_HPercent">
+                                                    <param id="0" name="Which">1</param>
+                                                    <param id="1" name="Instance variable">owner</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="374384876676493" type="sf_HPercent">
+                                                    <param id="0" name="Text">Players.Percent&amp;&quot;%&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

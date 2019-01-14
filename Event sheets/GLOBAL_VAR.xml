@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GLOBAL_VAR</name>
+    <events>
+        <variable comment="Nilai cooldown tembak awal" constant="0" name="InitialBullet_Cooldown" sid="530405948800716" static="0" type="number">20</variable>
+        <variable comment="Nilai cooldown Menghindar" constant="0" name="InitialDodge_Cooldown" sid="484218563820875" static="0" type="number">30</variable>
+        <variable comment="Nilai persentase kekuatan tembak" constant="0" name="FirePower_T1" sid="625980045414698" static="0" type="number">3</variable>
+        <variable comment="Dampak knockback" constant="0" name="Impact_Force" sid="427074684595795" static="0" type="number">1500</variable>
+    </events>
+</c2eventsheet>
